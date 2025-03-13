@@ -121,7 +121,7 @@ const Projects = () => {
                     {project.thumbnail && (
                       <div className="relative aspect-video w-full md:w-64 overflow-hidden mb-6">
                         <img 
-                          src={`http://localhost:7000/uploads/${project.thumbnail}`} 
+                          src={`http://64.225.84.149:7000/uploads/${project.thumbnail}`} 
                           alt={project.project_name} 
                           className="w-full h-full object-contain"
                         />

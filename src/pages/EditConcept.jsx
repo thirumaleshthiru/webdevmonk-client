@@ -123,7 +123,7 @@ const EditConcept = () => {
           throw new Error("Image upload failed");
         }
         
-        const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:7000';
+        const baseUrl = import.meta.env.VITE_API_URL || 'http://64.225.84.149:7000';
         const imageUrl = `${baseUrl}/uploads/${response.data.url}`;
         
         const quill = quillRef.current.getEditor();

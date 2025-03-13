@@ -136,12 +136,12 @@ const ManageTutorials = () => {
                   <div className="w-full sm:w-40 md:w-48 h-40 sm:h-full bg-gray-100 flex-shrink-0">
                     {tutorial.thumbnail ? (
                       <img 
-                        src={`http://localhost:7000/uploads/${tutorial.thumbnail}`}
+                        src={`http://64.225.84.149:7000/${tutorial.thumbnail}`}
                         alt={tutorial.tutorial_name}
                         className="w-full h-full object-contain"
                         onError={(e) => {
                           e.target.onerror = null;
-                          e.target.src = 'http://localhost:7000/uploads/default_thumbnail.png';
+                          e.target.src = 'http://64.225.84.149:7000/uploads/default_thumbnail.png';
                         }}
                       />
                     ) : (

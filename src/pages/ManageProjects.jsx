@@ -135,12 +135,12 @@ const ManageProjects = () => {
                   <div className="w-full sm:w-40 md:w-48 h-40 sm:h-full bg-gray-100 flex-shrink-0">
                     {project.thumbnail ? (
                       <img 
-                        src={`http://localhost:7000/uploads/${project.thumbnail}`}
+                        src={`http://64.225.84.149:7000/uploads/${project.thumbnail}`}
                         alt={project.project_name}
                         className="w-full h-full object-contain"
                         onError={(e) => {
                           e.target.onerror = null;
-                          e.target.src = 'http://localhost:7000/uploads/default_thumbnail.png';
+                          e.target.src = 'http://64.225.84.149:7000/uploads/default_thumbnail.png';
                         }}
                       />
                     ) : (

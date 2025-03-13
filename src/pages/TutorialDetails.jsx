@@ -83,7 +83,7 @@ const TutorialDetails = () => {
     };
     
     if (tutorial.thumbnail) {
-      structuredData.image = `http://localhost:7000/uploads/${tutorial.thumbnail}`;
+      structuredData.image = `http://64.225.84.149:7000/${tutorial.thumbnail}`;
     }
     
     return {

@@ -54,7 +54,7 @@ const EditTutorial = () => {
           });
           
           if (tutorialData.thumbnail) {
-            setThumbnailPreview(`http://localhost:7000/uploads/${tutorialData.thumbnail}`);
+            setThumbnailPreview(`http://64.225.84.149:7000/${tutorialData.thumbnail}`);
           }
         } else {
           setError("Tutorial not found");
@@ -269,7 +269,7 @@ const EditTutorial = () => {
                     className="w-full h-full object-contain"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = 'http://localhost:7000/uploads/default_thumbnail.png';
+                      e.target.src = 'http://64.225.84.149:7000/default_thumbnail.png';
                     }}
                   />
                   <button

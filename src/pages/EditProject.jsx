@@ -61,7 +61,7 @@ const EditProject = () => {
           
           if (projectData.thumbnail) {
             setExistingThumbnail(projectData.thumbnail);
-            setThumbnailPreview(`http://localhost:7000/uploads/${projectData.thumbnail}`);
+            setThumbnailPreview(`http://64.225.84.149:7000/uploads/${projectData.thumbnail}`);
           }
         } else {
           setError("Project not found.");
@@ -134,7 +134,7 @@ const EditProject = () => {
         }
         
         // Use proper URL construction with API URL from environment or config
-        const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:7000';
+        const baseUrl = import.meta.env.VITE_API_URL || 'http://64.225.84.149:7000';
         const imageUrl = `${baseUrl}/uploads/${response.data.url}`;
         
         const quill = quillRef.current.getEditor();
